@@ -1,10 +1,8 @@
-export default function getResponseFromAPI() {
+function getFullResponseFromAPI(apiEndpoint) {
   return new Promise((resolve, reject) => {
-    const success = true;
-    if (success) {
-      resolve();
-      } else {
-        reject();
-    }
+    if (apiEndpoint) resolve({ status: 200, body: 'Success' });
+    reject(Error('Failed to fetch API'));
   });
 }
+// Export the function for external use
+export default getFullResponseFromAPI;
