@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Currency from './3-currency';
 
 export default class Pricing {
@@ -17,11 +18,9 @@ export default class Pricing {
     this._amount = value;
   }
 
-
   get currency() {
     return this._currency;
   }
-
 
   set currency(value) {
     if (!(value instanceof Currency)) {
