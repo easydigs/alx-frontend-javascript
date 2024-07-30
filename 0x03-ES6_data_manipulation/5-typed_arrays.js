@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default function createInt8TypedArray(
     length,
     position,
@@ -15,4 +16,4 @@ export default function createInt8TypedArray(
   
     buffer.setUint8(position, value);
     return buffer;
-  }
+}
